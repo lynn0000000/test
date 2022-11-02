@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>廖曉翎 | XIAO-LING LIAO</title>
+    <script src="https://kit.fontawesome.com/68e8c3d38e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+        integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+
+</head>
+<style>
+    /*自訂義的名稱要加.*/
+
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        padding-left: 2px;
+        margin-top: 10px;
+    }
+    .two {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        padding-left: 2px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .content {
+        width: 400px;
+        height: 400px;
+        text-align: center;
+        
+    }
+
+    .h1 {
+        font-family: 微軟正黑體, Hind, sans-serif;
+        font-size: 45px;
+    }
+
+    .h2 {
+        font-size: 22px;
+    }
+
+    .word {
+        font-family: 微軟正黑體, Hind, sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    .color {
+        color: rgb(53, 96, 187);
+    }
+    .botton {
+        font-size: 35px;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(83, 162, 113);
+    }
+    .border {
+        border: 0px solid blue
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /*水平對齊--*/
+        justify-content: center; /*縱軸對齊|*/
+    }
+    .homework {
+        width: 450px;
+        font-size: 20px;
+        padding-left: 2%;
+        position: relative;
+    }
+    .fix{
+        width:100%;
+        height: 60px;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="fix">
+            <p class="one border color"> ABOUT ME</p>
+        </div>
+            <div class="main">
+                <div class="content border color">
+                    <h1 class="h1"> 廖曉翎<br>XIAO-LING LIAO</h1>
+                    <h2 class="h2">台中科技大學，二年甲班衛生股長</h2>
+                    <p class="word">最愛吉娃娃，希望我朋友養一隻讓我玩。<br>然後希望我頭髮可以快點留長，最近好冷</p>
+                    <div class="botton color">
+                        <a href="https://www.facebook.com/profile.php?id=100013337891832">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/x_lin90/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="http://127.0.0.1:5500/test.html">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="picture border">
+                    <img src="/photo/water.jpg" width="400px">
+                </div>
+            </div> 
+            <div class="header">
+                <p class="two border color">Homework</p>
+            </div>    
+            <div class="homework border color">
+                <a href="index2.html">作業2:HTML表格</a>
+                <a href='index3.html'>作業3:九九乘法表</a>
+                <a href='index4.html'>作業4:div排版</a>
+            </div>
+    </div>
+</body>
+
+</html>
