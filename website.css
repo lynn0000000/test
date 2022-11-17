@@ -1,8 +1,8 @@
-@font-face {
-    font-family: "my-word";
-    src: url(iconic-2.zip);
+html{
+    margin: 0;
 }
 body{
+    width: 100%;
     background-color: rgba(250, 235, 215, 0.808);
 }
 a:hover, a:visited, a:link, a:active {
@@ -39,7 +39,7 @@ h3{
 .title{
     width: 100%;
     height: 100px;
-    background: rgb(196, 159, 105);
+    background: rgb(207, 177, 133);
     display: flex;
     align-items: center;
     position: fixed;
@@ -51,6 +51,7 @@ h3{
     width: 90%;
     display: flex;
     flex-direction: row;
+
 }
 .menu{
     color: white;
@@ -85,36 +86,40 @@ h3{
 .main{
     width:100%;
 }
+
+
 .main-content{
     display: flex;
     flex-direction: row;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(250, 246, 237);
+}
+@media(max-width:1200px){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
 }
 .about-me{
     width: 100%;
     padding: 5%;
 }
-@media(max-width:758px){
+@media(max-width:1200px){
     .about-me{
-        width: 100%;
         padding: 6%;
     }
 }
 .about-me-content{
     font-size: large;
 }
-.main-content{
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: rgb(250, 246, 237);
-}
-@media(max-width:758px){
-    .main-content{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
+
 .photo-web{
     width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
 }
 
 /*----Homework----*/
@@ -124,15 +129,70 @@ h3{
     align-items: center;
     justify-content: center;
 }
-.card{
-    margin: 0.2%;
+.card-1,.card-2{
+    display: flex;
+    flex-direction: row;
 }
+@media(max-width:2000px){
+    .card{
+        margin: 0.4%;
+        width: 18rem;
+        height: 23rem;
+    }
+}
+@media(max-width:1470px){
+    .card{
+        margin: 0.2%;
+        width: 15rem;
+        height: 20rem;
+    }
+}
+@media(max-width:1200px){
+    .homework-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-1,.card-2{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        margin: 0.2%;
+        width: 15rem;
+        height: 20rem;
+    }
+}
+@media(max-width:763px){
+    .homework-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-1,.card-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-set{
+        width: 180px;
+        font-size: small;
+    }
+    .card{
+        margin: 5%;
+        width: 30rem;
+        height: 30rem;
+    }
+}
+.card{
+    border: 0;
+}
+
 .homework-link,.contact-link:hover, .homework-link:visited, .homework-link:link, .homework-link:active,.contact-link{
     color: #000;
 }
-.card-img-top{
-    width: 100%;
-    height: 100%;
+.btn-set{
+    display: flex;
+    justify-content: center;
+    background: rgb(207, 177, 133);
+    border: 0px;
 }
 
 /*----CONTACT----*/
@@ -141,28 +201,37 @@ h3{
     width: 100%;
     height: fit-content;
 }
+.row{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:720px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.c1,.c2{
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width:720px){
+    .c1,.c2{
+        display: flex;
+        flex-direction: column;
+    }
+}
 .col{
+    width: 200px;
     text-align: center;
 }
 
-@media (max-width:1000px) {
-    .col {
-        width: 100%;
-        flex: 50%;
-    }
-    
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .row > .div {
-        flex: 50%;
-    }
-}
-
 .contact-bg{
-    height: 300px;
+    padding: 10%;
+    height: fit-content;
     background-color: rgb(250, 246, 237) ;;
     margin-left: 10%;
     margin-right: 10%;
@@ -170,15 +239,19 @@ h3{
     display: flex;
     align-items: center;
     justify-items: center;
+    border-radius: 30px;
 }
 
 /*----FOOTER----*/
 footer{
-    background: rgb(196, 159, 105);
+    background: rgb(207, 177, 133);
     width: 100%;
-    height: 200px;
+    height: 100px;
     color: white;
+    display: flex;
+    flex-direction: row;  
+    
 }
-.footer-statement{
-
+.footer-content{
+    width: 200px;
 }
