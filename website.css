@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "my-word";
+    src: url(iconic-2.zip);
+}
+body{
+    background-color: rgba(250, 235, 215, 0.808);
+}
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    }
+.border{
+    border: 2px solid red;
+}
+h1{
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: a;
+}
+@media(max-width:758px){
+    h1{
+        margin: 5%;
+    }
+}
+h2{
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h3{
+    font-size: 20px;
+    color: rgb(94, 93, 93);
+}
+.A-H,.H-C,.C-F{
+    width: 100%;
+    height: 100px;
+}
+/*--------header----------*/
+
+.title{
+    width: 100%;
+    height: 100px;
+    background: rgb(196, 159, 105);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+
+}
+.title-content{
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    color: white;
+    padding-right: 5%;
+}
+.title-link:hover, .title-link:visited, .title-link:link, .title-link:active {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.title-icon-group{
+    display: flex;
+    flex-direction: row;
+}
+.title-icon{
+    padding: 10px;    
+}
+
+.ig,.fb,.github{
+    color: white;
+}
+
+
+/*--------body----------*/
+
+/*----ABOUT----*/
+
+.for-fixed{     /*在最上面加一塊高150px的區塊，使最上面fix的title不會跑掉*/
+    padding-top: 100px;
+}
+.main{
+    width:100%;
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
+.about-me{
+    width: 100%;
+    padding: 5%;
+}
+@media(max-width:758px){
+    .about-me{
+        width: 100%;
+        padding: 6%;
+    }
+}
+.about-me-content{
+    font-size: large;
+}
+.main-content{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(250, 246, 237);
+}
+@media(max-width:758px){
+    .main-content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+.photo-web{
+    width: 100%;
+}
+
+/*----Homework----*/
+.homework-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin: 0.2%;
+}
+.homework-link,.contact-link:hover, .homework-link:visited, .homework-link:link, .homework-link:active,.contact-link{
+    color: #000;
+}
+.card-img-top{
+    width: 100%;
+    height: 100%;
+}
+
+/*----CONTACT----*/
+
+.contact{
+    width: 100%;
+    height: fit-content;
+}
+.col{
+    text-align: center;
+}
+
+@media (max-width:1000px) {
+    .col {
+        width: 100%;
+        flex: 50%;
+    }
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .row > .div {
+        flex: 50%;
+    }
+}
+
+.contact-bg{
+    height: 300px;
+    background-color: rgb(250, 246, 237) ;;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+/*----FOOTER----*/
+footer{
+    background: rgb(196, 159, 105);
+    width: 100%;
+    height: 200px;
+    color: white;
+}
+.footer-statement{
+
+}
